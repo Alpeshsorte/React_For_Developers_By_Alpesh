@@ -12,6 +12,8 @@ function App(){
     <Nav/>
     <br />
     <br /><br /><br />
+    <br />
+    <Header/>
     <Header/>
   </div>
 }
