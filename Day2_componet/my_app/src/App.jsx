@@ -2,6 +2,7 @@ import Nav from "./component/Nav";
 
 import Header from "./component/Header";
 
+import sidebar  from "./component/sidebar";
 function App(){
   return <div>
     <h1>yes</h1>
@@ -18,4 +19,12 @@ function App(){
   </div>
 }
 
-export default App;
+function Side(){
+  return <div>
+    <h1>this is side bar content show create new function in App.jsx </h1>
+    <sidebar/>
+  </div>
+}
+
+export default {App , Side};
+// export default Side;
