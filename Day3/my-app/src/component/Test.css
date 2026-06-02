@@ -1,0 +1,9 @@
+.card{
+    border: 1px solid red;
+    /* width: 550px; */
+    height: auto;
+    text-align: center;
+}
+.card > img{
+    width: 30%;
+}

@@ -1,0 +1,7 @@
+.container{
+  background-color: rgb(179, 148, 208);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 10px;
+}
