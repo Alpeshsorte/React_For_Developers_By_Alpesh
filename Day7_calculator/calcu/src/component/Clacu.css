@@ -1,0 +1,87 @@
+/* Clacu.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+#cal{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+#topcal{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:right;
+}
+
+#topcal h1{
+    font-size:20px;
+    margin:10px 0;
+    word-wrap:break-word;
+}
+
+#botcal{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+#botcal button{
+    height:65px;
+    border:none;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    background:#f1f1f1;
+}
+
+#botcal button:hover{
+    transform:scale(1.05);
+}
+
+#botcal button:active{
+    transform:scale(0.95);
+}
+
+/* Number buttons */
+#botcal button:nth-child(-n+10){
+    background:#ffffff;
+    border:1px solid #ddd;
+}
+
+/* Operator buttons */
+#botcal button:nth-child(11),
+#botcal button:nth-child(12),
+#botcal button:nth-child(13),
+#botcal button:nth-child(14){
+    background:#ff9500;
+    color:white;
+}
+
+/* Equal button */
+#botcal button:nth-child(15){
+    background:#28a745;
+    color:white;
+}
+
+/* Clear button */
+#botcal button:nth-child(16){
+    background:#dc3545;
+    color:white;
+}
