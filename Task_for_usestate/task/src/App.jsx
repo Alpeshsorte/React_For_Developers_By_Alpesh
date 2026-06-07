@@ -4,17 +4,17 @@ import Cart from './component/Cart'
 import './App.css'
 export default function App() {
 
-  // let [count, setcount]=useState(0)
+  let [count, setcount]=useState(0)
 
-  // function inc(event){
-  //   setcount(count+1)
-  // }
-  // function dec(){
-  //   setcount(count-=1)
-  // }
-  // function reset(){
-  //   setcount(0)
-  // }
+  function inc(event){
+    setcount(count+1)
+  }
+  function dec(){
+    setcount(count-=1)
+  }
+  function reset(){
+    setcount(0)
+  }
 
   // let [student, setstudent]=useState([
   //   {
@@ -68,13 +68,13 @@ export default function App() {
 
     <div>App
 
-      {/* <div>
+      <div>
         {
           student.map(function(el,arr,i){
             return <Cart name={el.name} age={el.age} couser={el.couser}/>
           })
         }
-      </div> */}
+      </div>
 
       <div id='container'>
         {

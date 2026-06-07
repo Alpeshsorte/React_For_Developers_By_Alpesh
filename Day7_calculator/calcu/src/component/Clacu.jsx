@@ -69,6 +69,7 @@ export default function Clacu() {
         <button onClick={handalop}>/</button>
         <button onClick={handalsum}>=</button>
         <button onClick={handalclear}>AC</button>
+        <button onClick={handalclear}>DA</button>
       </div>
     </div>
   );
