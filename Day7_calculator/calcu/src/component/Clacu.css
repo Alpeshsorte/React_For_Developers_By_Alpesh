@@ -1,6 +1,6 @@
 /* Clacu.css */
 
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -9,7 +9,7 @@
 
 body{
     background:#f4f4f4;
-}
+} */
 
 #cal{
     width:400px;
@@ -84,4 +84,21 @@ body{
 #botcal button:nth-child(16){
     background:#dc3545;
     color:white;
+}
+
+#botcal button:nth-child(17),
+#botcal button:nth-child(18){
+    background-color: rgb(215, 167, 132);
+    color: white;
+}
+
+#history{
+
+    background-color: pink;
+    color: black;
+}
+#history h2{
+    display: flex;
+    justify-content: space-evenly;
+
 }
