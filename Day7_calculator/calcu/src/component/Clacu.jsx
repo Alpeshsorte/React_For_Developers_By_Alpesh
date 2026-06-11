@@ -63,10 +63,13 @@ export default function Clacu() {
       
     }
 
-    setHistory(prevHistory => [
-      ...prevHistory,
-      `${prev} ${op} ${curr} = ${result}`
-    ]);
+    // setHistory(prevHistory => [
+    //   ...prevHistory,
+    //   `${prev} ${op} ${curr} = ${result}`
+    // ]);
+    setHistory(function(prevHistory) {
+      return [...prevHistory, prev + " " + op + " " + curr + " = " + result];
+  });
 
     setcurr(result);
     setprev(0)
