@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
-import Item from './componenets/Item'
+// import Item from './componenets/Item'
+import Data from './componenets/Data'
+import Cart from './componenets/Cart'
 export default function App() {
 
   return (
-    <div>App welcome to the app compnenets 
-        <Item/>
+    <div style={{display:"grid", gridTemplateColumns:'repeat(3,1fr)'}}>
+       
+        {/* // <Item/> */}
+        <Data/>
+        <Cart/>
     </div>
   )
 }
