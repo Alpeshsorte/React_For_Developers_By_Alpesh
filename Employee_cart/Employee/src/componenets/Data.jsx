@@ -17,6 +17,16 @@ export default function Data() {
       name: "shail",
       salary: "700000",
       department: "business person in data loading"
+    },
+        {
+      name: "pappu",
+      salary: "744000",
+      department: "choclate factory"
+    },
+        {
+      name: "bheem",
+      salary: "70000",
+      department: "durg mafiya"
     }
   ])
 
