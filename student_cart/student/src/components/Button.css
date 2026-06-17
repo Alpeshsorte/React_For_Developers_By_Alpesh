@@ -1,0 +1,75 @@
+.student-card {
+  width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.student-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.result-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.marks,
+.grade {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.marks {
+  color: #007bff;
+}
+
+.grade-A {
+  color: green;
+}
+
+.grade-B {
+  color: blue;
+}
+
+.grade-C {
+  color: orange;
+}
+
+.grade-D {
+  color: red;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-group button:first-child {
+  background-color: #dc3545;
+}
+
+.btn-group button:last-child {
+  background-color: #28a745;
+}
+
+.btn-group button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
