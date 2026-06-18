@@ -31,7 +31,8 @@ export default function Data() {
             return (
                 <>
                 <Cart name={el.name} marks={el.marks} grade={el.grade} />
-                <Button marks={el.marks} grade={el.grade} />
+                <Button name={el.name} marks={el.marks} grade={el.grade} />
+                {/* <Button marks={el.marks} grade={el.grade} /> */}
                 </>
             );
             })

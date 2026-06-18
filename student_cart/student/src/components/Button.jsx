@@ -27,7 +27,7 @@
 
 import React, { useState } from "react";
 import "./Button.css";
-
+import Cart from "./Cart";
 export default function Button(props) {
   const [btn, setbtn] = useState(props.marks);
   const [ga, setga] = useState(props.grade);
@@ -63,6 +63,7 @@ export default function Button(props) {
   return (
     <div className="student-card">
       <h2>Student Result</h2>
+      <Cart/>
 
       <div className="result-info">
         <div>

@@ -18,7 +18,7 @@ export default function Cart({ name, marks, grade }) {
     <div className="card">
       <div className="card-header">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+          src=""
           alt="student"
         />
         <h2>{name}</h2>
