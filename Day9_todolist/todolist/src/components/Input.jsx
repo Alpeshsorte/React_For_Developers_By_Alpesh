@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Input() {
+export default function Input({setdata}) {
 
     let [inp, setinp]=useState("")
     let [opt, setoption]=useState("")
@@ -14,28 +14,31 @@ export default function Input() {
         setoption(event.target.value)
 
     }
-
-    let obj={
-        id:Date.now(),
-        task:inp,
-        priroty:opt,
-        status:false
+    function addtask(){
+            let obj={
+                id:Date.now(),
+                task:inp,
+                priority:opt,
+                status:false
+            }
+            // console.log(obj);
+            setdata(obj)
+            setinp("")
+            setoption("")
     }
-
-    console.log(obj);
     
 
   return (
-    <div style={{width:'500px', height:'500px', boxShadow:'rgba(0, 0, 0, 0.24) 0px 3px 8px', margin:'auto',backgroundColor:'red'}}>
-        <input  style={{padding:'5px 5px',width:'60%',margin:'10px 10px'}} onChange={inpchange} type="text" name="" id="" placeholder='Enter to do' />
+    <div style={{width:'500px', height:'200px', boxShadow:'rgba(0, 0, 0, 0.24) 0px 3px 8px', margin:'auto',backgroundColor:'red'}}>
+        <input  style={{padding:'5px 5px',width:'60%',margin:'10px 10px', backgroundColor:'black',color:'white', borderRadius:'5px'}} onChange={inpchange}  value={inp} type="text" name="" id="" placeholder='Enter to do' />
 
-        <select style={{padding:'5px 5px',width:'15%',margin:'10px 10px'}} onChange={selchange} name="" id="">
+        <select style={{padding:'5px 5px',width:'15%',margin:'10px 10px', backgroundColor:'yellow', borderRadius:'5px'}} onChange={selchange}  value={opt} name="" id="">
             <option value="">default</option>
             <option value="high">High</option>
             <option value="medium">Medium</option>
             <option value="low">Low</option>
         </select>
-        <button style={{padding:'5px 5px'}} type="button">Submit</button>
+        <button style={{padding:'5px 5px', backgroundColor:'greenyellow',borderRadius:'5px'}} onClick={addtask} type="button">Submit</button>
     </div>
   )
 }
