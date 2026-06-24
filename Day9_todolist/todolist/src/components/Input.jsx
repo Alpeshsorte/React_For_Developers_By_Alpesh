@@ -26,6 +26,10 @@ export default function Input({setdata}) {
             setinp("")
             setoption("")
     }
+
+    function sortchange(){
+        sortchange()
+    }
     
 
   return (
@@ -37,6 +41,11 @@ export default function Input({setdata}) {
             <option value="high">High</option>
             <option value="medium">Medium</option>
             <option value="low">Low</option>
+        </select>
+        <select style={{padding:'5px 5px',width:'15%',margin:'10px 10px', backgroundColor:'yellow', borderRadius:'5px'}} onChange={sortchange}  value={opt} name="" id="">
+            <option value="">default</option>
+            <option value="low to high">Low to High</option>
+            <option value="high to low">High to Low</option>
         </select>
         <button style={{padding:'5px 5px', backgroundColor:'greenyellow',borderRadius:'5px'}} onClick={addtask} type="button">Submit</button>
     </div>
