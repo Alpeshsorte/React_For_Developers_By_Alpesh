@@ -1,11 +1,10 @@
 import React from 'react'
-import Count from './components/Count'
-import Cart from './components/Cart'
+import Todolist from './components/Todolist'
 
 export default function App() {
   return (
     <div>
-        <Cart/>
+      <Todolist/>
     </div>
   )
 }
