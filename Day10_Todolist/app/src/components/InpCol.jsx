@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 export default function InpCol({task,setTask}) {
- 
     let divstyle = {
         height:'50px',
         width:'95%',
@@ -11,7 +10,6 @@ export default function InpCol({task,setTask}) {
         justifyContent:'space-evenly',
         alignItems:'center',
     }
-
     let [Inp,setInp] = useState("")
     let [prio,setPrio] = useState("")
 
@@ -30,8 +28,8 @@ export default function InpCol({task,setTask}) {
             priority : prio,
             status : false,
             isEditing : false,
-            seconds: 0,
-            isRunning: false
+            // seconds: 0,
+            // isRunning: false
         }
 
         setInp("")
