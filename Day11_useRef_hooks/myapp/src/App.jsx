@@ -1,5 +1,5 @@
 import React, { use, useRef, useState } from 'react'
-
+import Job from './components/Job'
 export default function App() {
 
   let [val,setVal]=useState("")
@@ -28,7 +28,9 @@ export default function App() {
     <div>
         <input ref={inpRef}  value={val}  placeholder="enter some thing " 
         onChange={handleChange} type="text" name="" id="" />
+        <h1>{ val }</h1>
          <button onClick={handleSubmit}>submit</button>
+        <Job/>
     </div>
   )
 }
