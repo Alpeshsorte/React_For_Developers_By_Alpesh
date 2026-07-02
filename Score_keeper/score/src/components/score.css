@@ -1,0 +1,119 @@
+/* Container styling */
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px 25px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Main title */
+.container h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/* Form layout - forces items into a neat column */
+.container form {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Aligns labels and text left for better readability */
+}
+
+/* Headings for form sections */
+.container h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  margin: 15px 0 6px 0;
+}
+
+/* First Name label specifically */
+.container label[for="first"] {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 6px;
+}
+
+/* Inputs, Select dropdown, and Textarea styling */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="number"],
+.container input[type="url"],
+.container select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #334155;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dynamic glow effect when clicking inside fields */
+.container input:focus,
+.container select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* File Input layout wrapper */
+.container input[type="file"] {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Radio buttons container styling */
+.container label:has(input[type="radio"]) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #334155;
+  margin-right: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Button Container for horizontal layout */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Universal Button styling */
+.container button {
+  flex: 1;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Submit button (Primary) */
+.container button[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.container button[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+/* Reset button (Secondary) */
+.container button[type="button"] {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.container button[type="button"]:hover {
+  background-color: #e2e8f0;
+}
