@@ -1,0 +1,66 @@
+/* Container for the entire product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Individual product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for the card */
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image wrapper and image styling */
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 12px;
+}
+
+.product-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Product title */
+.product-title {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Product price */
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008060;
+  margin: 0 0 4px 0;
+}
+
+/* Product category tag */
+.product-category {
+  font-size: 0.85rem;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: mt-auto 0 0 0; /* Pushes category to the bottom */
+}
