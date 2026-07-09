@@ -1,7 +1,9 @@
 // what is hooks 
-// Hooks are special functions that let you use React features like state, lifecycle methods, and context in functional components.
+// Hooks are special functions that let you use React features like state, lifecycle methods, 
+// and context in functional components.
 
-// useState is a React Hook that allows a component to store and update data (state). When the state changes, React automatically updates the UI.
+// useState is a React Hook that allows a component to store and update data (state). When the state changes, 
+// React automatically updates the UI.
 
 import React, { use } from 'react'
 

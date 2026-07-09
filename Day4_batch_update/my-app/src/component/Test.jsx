@@ -20,7 +20,8 @@
 
 // Batch Update in React (Definition)
 
-// Batch Update in React means React groups multiple state updates together and performs a single re-render instead of re-rendering after each update.
+// Batch Update in React means React groups multiple state updates together and performs a single re-render 
+// instead of re-rendering after each update.
 
 // This improves performance because React reduces unnecessary rendering.
 
@@ -30,7 +31,8 @@
 // Makes the UI faster and smoother
 // Interview Definition
 
-// Batching in React is the process of grouping multiple state updates into a single re-render cycle to improve application performance and avoid unnecessary renders.
+// Batching in React is the process of grouping multiple state updates into a single re-render cycle to 
+// improve application performance and avoid unnecessary renders.
 
 
 import React, { useState } from 'react'
