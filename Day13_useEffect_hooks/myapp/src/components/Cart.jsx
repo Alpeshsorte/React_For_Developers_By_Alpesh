@@ -69,6 +69,8 @@ export default function Cart() {
           <h3 className="product-title">{item.title}</h3>
           <p className="product-price">₹ {item.price}</p>
           <p className="product-category">{item.category}</p>
+          <p className="product-description">{item.description}</p>
+          <p  style={{color:"red"}}className="product-category">{item.rating.rate},: {item.rating.count}</p>
         </div>
       ))}
     </div>

@@ -10,11 +10,6 @@
 //   )
 // }
 
-
-
-
-
-
 import React, { useEffect, useState } from 'react'
 import Effect from './components/Effect'
 import Cart from './components/Cart'
@@ -41,9 +36,6 @@ export default function App() {
     let actualData=await data.json()
     console.log(actualData)
   }
-    
- 
-  
   return (
     <div>
           <h1>{count}</h1>
