@@ -107,6 +107,7 @@ export default function Score() {
     let obj = {
         first: "",
         last: "",
+        full:"",
         email: "",
         contact: "",
         gender: "",
@@ -142,6 +143,7 @@ export default function Score() {
         setform(obj)
     }
 
+
     return (
         <div
             className='container'
@@ -173,6 +175,8 @@ export default function Score() {
                     name="last"
                     placeholder="Enter your last name"
                 />
+                <h3>full name</h3>
+                <input type="text" name='fullname' placeholder='Enter full name? ' />
 
                 <h3>Email</h3>
                 <input
